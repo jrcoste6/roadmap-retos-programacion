@@ -23,3 +23,22 @@ console.log(dividir(6,3));
 const elementos = ["aire", "agua", "fuego", "viento"]
 
 console.log(elementos.map((elemento) => (elemento.length)));
+
+//Funciones recursivas
+function loop(x) {
+  if (x >= 10)
+    // "x >= 10" es la condición de salida (equivalente a "!(x < 10)")
+    return;// haz algo
+    console.log(x);   
+loop(x + 1);// la llamada recursiva
+}
+loop(3);
+
+function repeat(x) {
+    if (x >= 5)
+        return;
+    console.log(x) 
+    repeat(x + 1);
+}
+repeat(3);
+repeat(1);
