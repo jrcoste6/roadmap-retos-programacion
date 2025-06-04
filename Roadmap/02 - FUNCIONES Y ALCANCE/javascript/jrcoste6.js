@@ -34,11 +34,11 @@ loop(x + 1);// la llamada recursiva
 }
 loop(3);
 
+
 function repeat(x) {
     if (x >= 5)
         return;
     console.log(x) 
     repeat(x + 1);
 }
-repeat(3);
 repeat(1);
